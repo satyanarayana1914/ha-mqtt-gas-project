@@ -1,0 +1,16 @@
+mqtt:
+  sensor:
+    - name: "Satyanarayana Temperature"
+      state_topic: "home/reddisatyanarayana-2025/sensor"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature }}"
+
+    - name: "Satyanarayana Humidity"
+      state_topic: "home/reddisatyanarayana-2025/sensor"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+
+    - name: "Satyanarayana Gas"
+      state_topic: "home/reddisatyanarayana-2025/sensor"
+      unit_of_measurement: "ppm"
+      value_template: "{{ value_json.gas }}"
